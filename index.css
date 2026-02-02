@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: lightblue;
+    height: 150px; */
+    border: 1px solid black;
+}
+
+.logo {
+    width: 150px
+}
+
+.nav-items {
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.nav-items>ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.nav-items>ul>li {
+    padding: 10px;
+    list-style-type: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.res-card {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.res-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search {
+    padding: 10px
+}
