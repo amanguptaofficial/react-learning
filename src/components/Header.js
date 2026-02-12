@@ -10,9 +10,8 @@ function HeaderComponent() {
                 <ul className="nav-list">
                     <li>Home</li>
                     <li>About</li>
-                    <li>Contact</li>
-                    <li><ShoppingCart />Cart</li>
-                    <li><PhoneCall />Contact</li>
+                    <li><ShoppingCart size={19} color='red' /> Cart</li>
+                    <li><PhoneCall size={19} color='red' /> Contact</li>
                 </ul>
             </div>
 

@@ -1,12 +1,19 @@
 import { resData } from "../utils/mockData";
 import RestaurantCard from "./RestaurantCard";
+import { useState } from 'react'
 
 function BodyComponent() {
+    const [resList, setResList] = useState(resData);
     return (
         <div className="Body">
-            <div className="search" typeof="text">Search</div>
+            <div className="rated-btn">
+                <button onClick={() => {
+                    const newData = resList.filter(obj => obj.card.card.info.avgRating > 4.5);
+                    setResList(newData);
+                }}>Top Rated Restaurants</button>
+            </div>
             <div className="res-container">
-                {resData.map(obj =>
+                {resList.map(obj =>
                     <RestaurantCard
                         key={obj.card.card.info.id}
                         resObj={obj?.card?.card?.info}
