@@ -92,3 +92,17 @@
 .rated-btn {
     margin: 15px
 }
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.shimmer-card {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(224, 224, 224, 0.988);
+}
