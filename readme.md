@@ -66,6 +66,8 @@ const [value, setValue] = useState("");
 
 useState is also a function which return a array first the the value and second is the funciton for set the value
 
+whenEver the state variable updates react triggers a reconcilation cycle (re render the component)
+
 
 2). useEffect(). (it is also a funciton which take a callback function inside a argument it will execute after the component loaded)
 
@@ -111,18 +113,29 @@ setBtnName("Logout")
 }}>{btnName}</button>
 
 
+# what is virtual DOM
+
+virtual dom is nothing but it is a object representation of the JSX
 
 
 
+# we know the useEffect is a hook it has dependency array in the second parameter what is the use of this?
 
+useEffect(()=>{
 
+})
 
+useEffect(()=>{
 
+},[])
 
+useEffect(()=>{
 
+},[component])
 
-        
+we know that useEffect take one parameter is required and second one is optional
 
+if we not pass dependency array it means 
 
 
 
